@@ -1,0 +1,43 @@
+﻿@model _5032_asg.Models.Ship
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ship</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ship_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ship_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ship_Builder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ship_Builder)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lauch_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lauch_Date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Ship_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
